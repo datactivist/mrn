@@ -1,0 +1,212 @@
+---
+title: "Enjeux de la donnée"
+subtitle: ""
+author: "Joël Gombin, Datactivist"
+date: "Métropole Rouen Normandie, <BR>le 23 mai 2021"
+output:
+  SlidesDatactivist::moon_reader:
+    css: [default, datactivist, datactivist-fonts]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      beforeInit: "macros.js"
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
+params:
+  event: Comité de direction MRN
+  slug: mrn
+---
+
+layout: true
+
+```{html, echo=FALSE}
+<style>
+.remark-slide-number {
+  position: inherit;
+}
+
+.remark-slide-number .progress-bar-container {
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  display: block;
+  left: 0;
+  right: 0;
+}
+
+.remark-slide-number .progress-bar {
+  height: 100%;
+  background-color: #e95459;
+}
+
+</style>
+```
+
+`r paste0("<div class='my-footer'><span>", params$event, "</span> <center><div class=logo><img src='https://github.com/datactivist/slides_datactivist/raw/master/inst/rmarkdown/templates/xaringan/resources/img/fond_noir_monochrome.png' width='100px'></center></span></div>")`
+
+---
+
+class: center, middle
+
+Ces slides en ligne : `r paste0("http://datactivist.coop/", params$slug)`
+
+Les productions de Datactivist sont librement réutilisables selon les termes de la licence [Creative Commons 4.0 BY-SA](https://creativecommons.org/licenses/by-sa/4.0/legalcode.fr).
+
+<BR> <BR>
+
+![](https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png)
+
+---
+
+## La révolution des données 
+
+.pull-left[
+![A computer generated photographic style image showing a piles of distorted books with some surreal landscape features in the immediate foreground, such as a kind of beach and games board. The closed books, many stacked, have a range of different colours (with blue and red palate colours most dominant) with the white pages visible as they are mainly placed flat. The books merge into each other in an impressionistic, digitally blurred way, and rising out of them and taking up the main part of the image is a huge undefined concrete structure rising out of the books. It has more, larger mulitcoloured digitally impressionist books heaped on top of it in a huge pile. This structure dominates the image like a monument with a pale grey and light blue cloudy sky natural sky in the background. In the distance, another monument can be vaguely seen, a needle shape.](https://betterimagesofai.org/ImagesAI/Jbustterr_Monument_512x512.jpg)
+]
+
+.pull-right[
+> En 2020, le volume des données produites en
+une seule journée pour la gestion des villes
+européennes, sera 4 fois supérieur à celui des
+données produites pour toute l’année 2015.
+
+_Source : McKinsey, 2016_
+]
+
+
+---
+
+## C'est la donnée qui dirige le monde...
+
+.center[[![](./img/waze.png)](http://www.leparisien.fr/info-paris-ile-de-france-oise/transports/circulation-waze-l-appli-qui-agace-les-riverains-04-06-2018-7752765.php)]
+
+.center[[![](./img/airbnb.png)](https://www.lexpress.fr/actualite/immobilier/paris-l-elu-ian-brossat-veut-interdire-airbnb-dans-le-centre-historique_2034009.html)]
+
+---
+## C'est la donnée qui dirige le monde...
+
+.center[[![](./img/toronto.png)](https://www.lagazettedescommunes.com/625064/la-ville-selon-google-est-elle-transposable-en-france/)]
+---
+
+## C'est la donnée qui dirige le monde...
+
+.center[
+.small[
+[![](./img/priol_small.png)](https://civiteo.fr/livres/ne-laissez-pas-google-gerer-nos-villes/)
+]
+]
+
+---
+class: inverse, center, middle
+
+# Cinq enjeux stratégiques
+
+
+
+---
+class: center, middle
+
+## La régulation et la souveraineté
+
+???
+
+Partenariats Waze OM et région Sud
+AirBnb
+Connaissance du territoire, cartographie (google maps, 
+quelle place pour l'IGN, pour OSM ?)
+
+Code is law (Lessig) ; data is law / régulation par la donnnée 
+(ex : déploiement fibre? observatoire commande publique Bretagne)
+
+---
+
+class: center, middle
+
+## La qualité et l'efficience de l'action et du service publics
+
+???
+
+smart city / IoT
+
+ex : eau, éclairage public, mobilité...
+
+---
+class: center, middle
+
+## L'irrigation du territoire
+
+### économique, mais aussi sociale, sociétale, environnementale... 
+
+### Pas d'écosystème sans données. 
+
+???
+
+ex : DVF, applis mobilités, canne blanche connectée...
+---
+
+class: center, middle
+
+## Le pilotage de la collectivité
+
+### L'exemple de la commande publique
+
+.center[
+.small[
+[![](./img/breizh.png)](https://achat-public-breizh.opendatasoft.com/pages/accueil-chantiers/)
+]
+]
+
+???
+
+on ne sait pas exactement à combien s'élève la commande publique en France
+
+le pilotage de la commande publique est très difficile
+
+enjeu d'achat au meilleur prix, mais aussi de prévisions, etc.
+
+---
+class: center, middle
+
+## La transformation de l'administration
+
+???
+
+- transversalité
+- gains d'efficience
+- montée en compétence
+- agilité
+- référentiels
+- ouverture sur l'extérieur
+
+---
+
+## Les conditions de réussite
+
+-   Développer et partager une culture de la donnée
+
+-   Poser des principes, une stratégie, des objectifs
+
+-   Travailler en transversalité, avec un portage au plus haut niveau
+
+-   Travailler étroitement avec ses communautés
+
+-   L'open data, un incontournable : à la fois un outil d'acculturation et d'initiation, et la condition de la transversalité et de l'ouverture à l'extérieur 
+
+---
+class: center, middle
+
+## En bref : la donnée n'est PAS une question technique. 
+
+## C'est avant tout une question stratégique !
+---
+
+class: inverse, center, middle
+
+# Merci !
+
+Contact : [joel\@datactivist.coop](mailto:joel@datactivist.coop)
